@@ -1,0 +1,99 @@
+
+*{
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  background-color: black;
+}
+#titre{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#page{
+  display: flex;
+  margin-left: 190%;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+#boxfilm {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+  }
+  
+  .movie-title {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .movie-img {
+    display: block;
+    margin: 0 auto;  
+    background: rgba(232, 228, 228, 0.61);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  
+  .movie-item {
+    width: 200px;
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.61);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  #boxserie {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+  }
+  
+  
+  #boxanime {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+  }
+  .anime-title {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .anime-img {
+    display: block;
+    margin: 0 auto;  
+    background: rgba(232, 228, 228, 0.61);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  
+  .anime-item {
+    width: 200px;
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.61);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  
+  
+  
