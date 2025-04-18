@@ -1,5 +1,5 @@
 const API_KEY = "9a1c9d157712b25b8656fff6593c809c";
-const page = "7";
+const page = "1";
 
 
 function shuffleArray(array) {
@@ -19,7 +19,7 @@ async function film(category = 'popular') {
   
   const shuffledResults = shuffleArray(response.results);
 
-  shuffledResults.slice(0, 4).forEach(movie => {
+  shuffledResults.slice(0, 5).forEach(movie => {
     const movieItem = document.createElement("div");
     movieItem.classList.add("movie-item");
 
@@ -48,7 +48,7 @@ async function serie() {
 
   const shuffledResults = shuffleArray(response.results);
 
-  shuffledResults.slice(0, 4).forEach(movie => {
+  shuffledResults.slice(0, 5).forEach(movie => {
     const movieItem = document.createElement("div");
     movieItem.classList.add("movie-item");
 

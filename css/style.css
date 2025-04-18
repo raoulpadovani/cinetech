@@ -2,6 +2,19 @@
 *{
   text-decoration: none;
   list-style: none;
+  color: thistle;
+}
+.text-wrapper p:first-child{
+  display:inline;
+}
+.full-text{
+  display:inline;
+}
+.readmore-btn{
+  display:block;
+  color:blue;
+  cursor:pointer;
+  margin-top:15px;
 }
 body{
   background-color: black;
@@ -10,13 +23,20 @@ body{
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-left: 40%;
 }
-#page{
+.tout{
+  max-height: min-content;
+  
+}
+
+header{
   display: flex;
-  margin-left: 190%;
+
   text-decoration: none;
   list-style: none;
   color: white;
+  gap: 70px;
 }
 
 #boxfilm {
@@ -94,6 +114,16 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.3);
     color: white;
   }
+
+  #pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
   
-  
+  button{
+    background-color: brown;
+    color: rgb(18, 17, 17);
+  }
   

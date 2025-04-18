@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/index.js"></script>
+    <script defer src="js/serie.js"></script>
 </head>
 <body>
     <header id="titre">
         <a href="index.html"><img src="nexly.png" height="200" width="200"></a>
         <a href ="detail.html"><h1 id="page">Details</h1></a>
-        <a href ="serie.html"><h1 id="page">Series</h1></a>
-        <a href ="film.html"><h1 id="page">Films</h1></a>
+        <a href ="serie.html"><h1 id="s">Series</h1></a>
+        <a href ="film.html"><h1 id="f">Films</h1></a>
 
     </header>
-    <section class="tout">
-        <div id="boxfilm"></div><br><br>
-        <div id="boxserie"></div>
-    </section>
-    
-    
+    <div id="boxserie"></div><br><br>
+      <div id="pagination">
+        <button id="prev-page" class="disabled">Précédent</button>
+        <span id="page-number">Page 1</span>
+        <button id="next-page">Suivant</button>
+      </div>
 </body>
 </html>
