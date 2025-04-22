@@ -1,54 +1,54 @@
-
-*{
+* {
   text-decoration: none;
   list-style: none;
-  
+}
+* img{
+  cursor: pointer;
 }
 
 body {
   background-color: black; 
-  
-  
 }
-#titre{
+
+#titre {
   align-items: center;
   display: flex;
   justify-content: center;
   margin-left: -7%;
-
-  
 }
 
-
-header{
+header {
   display: flex;
-  
   text-decoration: none;
   list-style: none;
   color: white;
   gap: 70px;
-  
 }
-header a{
+
+header a {
   color: white;
   text-decoration: none;
 }
-header a:hover{
+
+header a:hover {
   color: #ca341368;
 }
-header a:active{
+
+header a:active {
   color: #ca341368;
   text-decoration: underline;
 }
 
-.Bienvenue{
+.Bienvenue {
   color: white;
   align-items: center;
   margin-left: 43%;
 }
-#Bienvenue{
+
+#Bienvenue {
   margin-left: -8%;
 }
+
 .connecter {
   display: flex;
   align-items: center;
@@ -91,169 +91,216 @@ header a:active{
   background-color: #ca341368;
   color: #fdfeff;
   box-shadow: none;
-  
 }
 
-
 #boxfilm {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center;
-  }
-  
-  .movie-title {
-    text-align: center;
-    margin: 0;
-  }
-  
-  .movie-img {
-    display: block;
-    margin: 0 auto;  
-    background: rgba(232, 228, 228, 0.61);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.3px);
-    -webkit-backdrop-filter: blur(3.3px);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-  }
-  
-  .movie-item {
-    width: 200px;
-    text-align: center; 
-    background: rgba(0, 0, 0, 0.61);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.3px);
-    -webkit-backdrop-filter: blur(3.3px);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    color: white;
-  }
-  #boxserie {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center;
-  }
-  
-  
-  #boxanime {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center;
-  }
-  .anime-title {
-    text-align: center;
-    margin: 0;
-  }
-  
-  .anime-img {
-    display: block;
-    margin: 0 auto;  
-    background: rgba(232, 228, 228, 0.61);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.3px);
-    -webkit-backdrop-filter: blur(3.3px);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-  }
-  
-  .anime-item {
-    width: 200px;
-    text-align: center; 
-    background: rgba(0, 0, 0, 0.61);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.3px);
-    -webkit-backdrop-filter: blur(3.3px);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    color: white;
-  }
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center;
+}
 
-  #pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 10px;
-  }
-  #page-number{
-    color: white;
-    
-  }
-  
-  #pagination button{
-    background-color: brown;
-    color: rgb(18, 17, 17);
-  }
-  
-  #movie-details {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    overflow-y: auto;
-  }
+.movie-title {
+  text-align: center;
+  margin: 0;
+}
 
-  #serie-details {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    overflow-y: auto;
-  }
-  #search-container {
-    position: relative;
-    display: inline-block;
-    background-color: black;
+.movie-img {
+  display: block;
+  margin: 0 auto;  
+  background: rgba(232, 228, 228, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
 
+.movie-item {
+  width: 200px;
+  text-align: center; 
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#boxserie {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center;
+}
+
+#boxanime {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center;
+}
+
+.anime-title {
+  text-align: center;
+  margin: 0;
+}
+
+.anime-img {
+  display: block;
+  margin: 0 auto;  
+  background: rgba(232, 228, 228, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.anime-item {
+  width: 200px;
+  text-align: center; 
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+#page-number {
+  color: white;
+}
+
+#pagination button {
+  background-color: #ca341368;
+  color: rgb(18, 17, 17);
+}
+
+#movie-details {
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+#serie-details {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+#search-container {
+  position: relative;
+  display: inline-block;
+  background-color: black;
 }
 
 #search-bar {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #050505;
-    color: rgb(228, 13, 13);
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #050505;
+  color: #ca341368;
 }
 
 #autocomplete-list {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 300px;
-    border: 1px solid #050505;
-    background-color: #050505;
-    z-index: 1000;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-height: 200px;
-    overflow-y: auto;
-    color: rgb(228, 13, 13);
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 300px;
+  border: 1px solid #050505;
+  background-color: #050505;
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  color: #ca341368;
 }
 
 #autocomplete-list li {
-    padding: 10px;
-    cursor: pointer;
+  padding: 10px;
+  cursor: pointer;
 }
 
 #autocomplete-list li:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
+}
+
+#liked-movies {
+  color: thistle;
+  margin-left: 10%;
+}
+#li{
+  color: white;
+  margin-left: 0% ;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #search-bar {
+    width: 100%;
+  }
+
+  #boxfilm, #boxserie, #boxanime {
+    gap: 10px;
+  }
+
+  .movie-item, .anime-item {
+    width: 150px;
+  }
+
+  #pagination button {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #search-bar {
+    width: 90%;
+  }
+
+  .movie-item, .anime-item {
+    width: 120px;
+  }
+
+  #pagination button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
 }

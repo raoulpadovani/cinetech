@@ -29,7 +29,6 @@ async function displayRecipes(category = 'popular') {
     img.style.width = "100%";
     img.classList.add("movie-img");
 
-    // Ajouter un événement de clic pour rediriger vers movie.html avec l'ID du film
     movieItem.addEventListener("click", () => {
       window.location.href = `movie.html?id=${movie.id}`;
     });

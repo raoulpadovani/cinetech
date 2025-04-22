@@ -1,17 +1,17 @@
 const API_KEY = "9a1c9d157712b25b8656fff6593c809c";
 let currentPage = 1;
 
-async function fetchSeries(page = 1) {
-    const query = await fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&language=fr-FR&page=${page}`);
+async function fetchSeries(category = 'popular', page = 1) {
+    const query = await fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&language=fr-FR&page=${page}&sort_by=${category}`);
     const response = await query.json();
     return response.results;
 }
 
-async function displaySeries() {
+async function displaySeries(category = 'popular') {
     const serieContainer = document.getElementById("boxserie");
     serieContainer.innerHTML = "";
 
-    const series = await fetchSeries(currentPage);
+    const series = await fetchSeries(category, currentPage);
     series.forEach(serie => {
         const serieItem = document.createElement("div");
         serieItem.classList.add("movie-item");
@@ -28,10 +28,9 @@ async function displaySeries() {
         img.style.width = "100%";
         img.classList.add("movie-img");
 
-        
         serieItem.addEventListener("click", () => {
-          window.location.href = `dserie.html?id=${serie.id}`;
-      });
+            window.location.href = `dserie.html?id=${serie.id}`;
+        });
 
         serieItem.appendChild(title);
         serieItem.appendChild(img);
