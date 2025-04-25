@@ -96,7 +96,7 @@ async function fetchMovieRecommendations(movieId) {
     recommendationsContainer.innerHTML = `<h2>Films suggérés :</h2>`;
 
     // Ajouter chaque film recommandé
-    recommendations.results.slice(0, 5).forEach(movie => {
+    recommendations.results.slice(0, 3).forEach(movie => {
       const movieElement = document.createElement("div");
       movieElement.style.display = "inline-block";
       movieElement.style.margin = "10px";

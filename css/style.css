@@ -197,6 +197,10 @@ header a:active {
   z-index: 1000;
   overflow-y: auto;
 }
+#movie-details p{ 
+  margin-left: 30%;
+  margin-right: 30%;
+}
 
 #serie-details {
   background-color: rgba(0, 0, 0, 0.9);
@@ -207,6 +211,10 @@ header a:active {
   justify-content: center;
   z-index: 1000;
   overflow-y: auto;
+}
+#serie-details p{ 
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #search-container {

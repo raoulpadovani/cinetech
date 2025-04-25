@@ -146,9 +146,10 @@ async function fetchSerieRecommendations(serieId) {
     const recommendationsContainer = document.createElement("div");
     recommendationsContainer.id = "serie-recommendations";
     recommendationsContainer.innerHTML = `<h2>Séries suggérées :</h2>`;
+    
 
     
-    recommendations.results.slice(0, 5).forEach(serie => {
+    recommendations.results.slice(0, 3).forEach(serie => {
       const serieElement = document.createElement("div");
       serieElement.style.display = "inline-block";
       serieElement.style.margin = "10px";
