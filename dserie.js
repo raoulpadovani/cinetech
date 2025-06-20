@@ -33,7 +33,7 @@ async function fetchSerieDetails(serieId) {
       <p><strong>Pays d'origine :</strong> ${countries}</p>
       <p><strong>Résumé :</strong> ${serie.overview}</p>
       <p><strong>Acteurs principaux :</strong> ${actors}</p>
-      <button id="like-button" data-serie-id="${serie.id}" data-serie-name="${serie.name}">Like</button>
+      <button id="like-button" data-serie-id="${serie.id}" data-serie-name="${serie.name}"><span style='font-size:1.5em;color:#ca3413;'>&#10084;&#65039;</span></button>
       <div id="serie-reviews">
         <h2>Commentaires :</h2>
         <p>Chargement des commentaires...</p>
@@ -47,50 +47,6 @@ async function fetchSerieDetails(serieId) {
     });
   
     
-    fetchSerieReviews(serieId);
-  }async function fetchSerieDetails(serieId) {
-    
-    const serieQuery = await fetch(`https://api.themoviedb.org/3/tv/${serieId}?api_key=${API_KEY}&language=fr-FR`);
-    const serie = await serieQuery.json();
-  
-    
-    const creditsQuery = await fetch(`https://api.themoviedb.org/3/tv/${serieId}/credits?api_key=${API_KEY}&language=fr-FR`);
-    const credits = await creditsQuery.json();
-  
-   
-    const director = credits.crew.find(person => person.job === "Director")?.name || "Inconnu";
-  
-    const actors = credits.cast.slice(0, 5).map(actor => actor.name).join(", ") || "Non disponible";
-  
-    
-    const genres = serie.genres.map(genre => genre.name).join(", ") || "Non disponible";
-  
-    
-    const countries = serie.origin_country.join(", ") || "Non disponible";
-  
-    
-    const detailsContainer = document.getElementById("serie-details");
-    detailsContainer.innerHTML = `
-      <h1>${serie.name}</h1>
-      <img src="https://image.tmdb.org/t/p/w500${serie.poster_path}" alt="${serie.name}">
-      <p><strong>Réalisateur :</strong> ${director}</p>
-      <p><strong>Genres :</strong> ${genres}</p>
-      <p><strong>Pays d'origine :</strong> ${countries}</p>
-      <p><strong>Résumé :</strong> ${serie.overview}</p>
-      <p><strong>Acteurs principaux :</strong> ${actors}</p>
-      <button id="like-button" data-serie-id="${serie.id}" data-serie-name="${serie.name}">Like</button>
-      <div id="serie-reviews">
-        <h2>Commentaires :</h2>
-        <p>Chargement des commentaires...</p>
-      </div>
-    `;
-  
-    
-    const likeButton = document.getElementById("like-button");
-    likeButton.addEventListener("click", () => {
-      saveLikedSerie(serie.id, serie.name);
-    });
-  
     fetchSerieReviews(serieId);
   }
 

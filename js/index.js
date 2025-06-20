@@ -119,6 +119,14 @@ document.addEventListener("DOMContentLoaded", () => {
       autocompleteList.innerHTML = "";
     }
   });
+
+  const burger = document.getElementById('burger-menu');
+  const nav = document.getElementById('nav-links');
+  if (burger && nav) {
+    burger.addEventListener('click', function() {
+      nav.classList.toggle('active');
+    });
+  }
 });
 
 film();

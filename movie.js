@@ -37,6 +37,7 @@ async function fetchMovieDetails(movieId) {
     <p><strong>Acteurs principaux :</strong> ${actors}</p>
   `;
 }
+
 async function fetchMovieDetails(movieId) {
     // Récupérer les détails du film
     const movieQuery = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}&language=fr-FR`);
@@ -68,7 +69,7 @@ async function fetchMovieDetails(movieId) {
       <p><strong>Pays d'origine :</strong> ${countries}</p>
       <p><strong>Résumé :</strong> ${movie.overview}</p>
       <p><strong>Acteurs principaux :</strong> ${actors}</p>
-      <button id="like-button" data-movie-id="${movie.id}" data-movie-title="${movie.title}">Like</button>
+      <button id="like-button" data-movie-id="${movie.id}" data-movie-title="${movie.title}"><span style='font-size:1.5em;color:#ca3413;'>&#10084;&#65039;</span></button>
     `;
   
     // Ajouter un gestionnaire d'événements pour le bouton "Like"
