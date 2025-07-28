@@ -24,6 +24,9 @@ header {
   color: white;
   gap: 60px;
 }
+header img {
+  cursor:default;
+}
 
 header a {
   color: white;
